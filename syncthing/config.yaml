@@ -32,6 +32,7 @@ map:
     read_only: false
   - type: ssl
 host_network: true
+full_access: true
 ports:
   8384/tcp: null
   22000/tcp: 22000
