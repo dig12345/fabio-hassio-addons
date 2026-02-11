@@ -1,3 +1,7 @@
+## 2.0.15 (addon)
+
+- Enable AppArmor `dac_override` capability so Syncthing can write to the media folder when using a mounted drive (e.g. external storage) with different ownership.
+
 ## Major changes in 2.0
 
 - Database backend switched from LevelDB to SQLite. There is a migration on
