@@ -1,5 +1,5 @@
 name: Syncthing
-version: 2.0.15
+version: 2.0.14
 slug: syncthing
 description: Open Source Continuous File Synchronization
 url: https://syncthing.net
@@ -50,4 +50,4 @@ options:
   PUID: 1000
   PGID: 1000
   TZ: Etc/UTC
-image: ghcr.io/dig12345/hassio-syncthing
+image: fabioogaravini/hassio-syncthing
