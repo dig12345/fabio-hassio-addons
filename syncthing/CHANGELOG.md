@@ -1,7 +1,3 @@
-## 2.0.15 (addon)
-
-- Addon release
-
 ## 2.0.14 (addon – media folder fix)
 
 - Enable AppArmor `dac_override` capability so Syncthing can write to the media folder when using a mounted drive (e.g. external storage) with different ownership.
