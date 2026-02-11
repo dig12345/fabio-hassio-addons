@@ -1,10 +1,9 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
-# Run as root so Syncthing can write to any path (e.g. /media on mounted drives).
-chown -R root:root /config /data 2>/dev/null || true
+chown abc:abc -R /config /data
 
 s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 8384" \
-    exec syncthing \
+    s6-setuidgid abc syncthing \
     --home=/config --no-browser --no-restart \
     --gui-address="0.0.0.0:8384"

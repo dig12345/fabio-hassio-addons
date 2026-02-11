@@ -32,7 +32,9 @@ map:
     read_only: false
   - type: ssl
 host_network: true
-full_access: true
+privileged:
+  - SYS_ADMIN
+  - DAC_READ_SEARCH
 ports:
   8384/tcp: null
   22000/tcp: 22000
@@ -51,4 +53,4 @@ options:
   PUID: 1000
   PGID: 1000
   TZ: Etc/UTC
-image: ghcr.io/dig12345/hassio-syncthing
+image: fabioogaravini/hassio-syncthing
